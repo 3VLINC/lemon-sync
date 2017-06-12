@@ -1,5 +1,5 @@
 # Docker LemonSync
-Sync local theme files to your lemon stand store using the lemon sync command line utility.
+Sync local theme files to your Lemon Stand store using the lemonsync command line utility.
 
 ## Usage
 
@@ -9,7 +9,7 @@ Set the HOST, KEY and ACCESS environment variables.
 Opitonally set the IGNORE_PATTERNS and FILE_PATTERNS environment variables.
 
 ### Volumes
-Mount your local theme directory to /working_dir. Files in this folder will be sync'ed to the remote Lemon Stand store.
+Mount your local theme directory to /working_dir. Files in this folder will be synced to the remote Lemon Stand store.
 
 ## Example docker-compose.yaml
 
@@ -29,4 +29,4 @@ services:
 ```
 
 ## Additional Information
-For more information on these settings see the lemon sync repository: [https://github.com/lemonstand/lemonsync](https://github.com/lemonstand/lemonsync)
+For more information see the lemonsync repository: [https://github.com/lemonstand/lemonsync](https://github.com/lemonstand/lemonsync)
