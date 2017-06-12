@@ -1,5 +1,5 @@
 # Docker LemonSync
-Docker image for syncing your local Lemon Stand theme to your store
+Sync local theme files to your lemon stand store using the lemon sync command line utility.
 
 ## Usage
 
