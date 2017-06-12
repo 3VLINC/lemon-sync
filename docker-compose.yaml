@@ -1,0 +1,13 @@
+version: '2'
+services:
+  lemonsync:
+    image: threevl/lemonsync:latest
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    environment:
+      HOST: ${HOST}
+      KEY: ${KEY}
+      ACCESS: ${ACCESS}
+    volumes:
+      - ./working_dir:/working_dir
