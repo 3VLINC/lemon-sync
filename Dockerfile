@@ -1,11 +1,5 @@
 FROM alpine:latest
-RUN apk add --update py-pip gettext ca-certificates && pip install lemonsync
-COPY entrypoint.sh /
-COPY lemonsync.template.cfg /
-ENV HOST=
-ENV KEY=
-ENV ACCESS=
-ENV FILE_PATTERNS='[ "*" ]'
-ENV IGNORE_PATTERNS='[ "*.tmp", "*.TMP", "*/.git*", "*.DS_Store", "*/node_modules/*" ]'
+RUN apk add --update py-pip ca-certificates && pip install lemonsync
+WORKDIR /working_dir
 VOLUME ['/working_dir']
-ENTRYPOINT /entrypoint.sh
+CMD ["lemonsync", "-c", "/working_dir/lemonsync.cfg"]
